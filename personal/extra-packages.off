@@ -1,0 +1,7 @@
+(require 'org-journal)
+(setq org-journal-dir "~/org/journal/%Y"
+      org-journal-date-format "%Y-%m-%d, %a"
+      org-journal-file-format "%Y-%m-%d.org")
+
+(require 'ws-butler)
+(add-hook 'prog-mode-hook #'ws-butler-mode)
